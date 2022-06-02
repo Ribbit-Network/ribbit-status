@@ -3,7 +3,7 @@ name: test_status
 on: workflow_dispatch
 
 jobs:
-  test_md:
+  test_status:
 
     runs-on: ubuntu-latest
 
