@@ -1,9 +1,9 @@
-name: test_status
+name: website
 
 on: workflow_dispatch
 
 jobs:
-  test_status:
+  website_test:
 
     runs-on: ubuntu-latest
 
@@ -21,4 +21,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest test_status.py
+        pytest tests/test_website.py
