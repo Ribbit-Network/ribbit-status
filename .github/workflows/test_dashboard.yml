@@ -2,11 +2,9 @@ name: dashboard
 
 on: 
   workflow_dispatch:
-    inputs:
-      name:
-        type: type
-        options: 
-        - debug
+    use-emoji:
+      type: boolean
+      description: Include  emojis
   schedule:
     - cron: '0 0 * * FRI'
 
