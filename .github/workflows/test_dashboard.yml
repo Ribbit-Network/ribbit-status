@@ -1,6 +1,14 @@
 name: dashboard
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        type: type
+        options: 
+        - debug
+  schedule:
+    - cron: '0 0 * * FRI'
 
 jobs:
   dashboard_test:
